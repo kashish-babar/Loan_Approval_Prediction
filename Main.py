@@ -13,9 +13,9 @@ from sklearn.metrics import accuracy_score
 
 
 # loading the dataset
-train_df = pd.read_csv(r"C:\Users\kashi\Downloads\train_u6lujuX_CVtuZ9i.csv")
+train_df = pd.read_csv("Train_data.csv")
 print(train_df.head())
-test_df = pd.read_csv(r"C:\Users\kashi\Downloads\test_Y3wMUE5_7gLdaTN.csv")
+test_df = pd.read_csv("Test_data.csv")
 print(test_df.head())
 
 
