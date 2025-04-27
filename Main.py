@@ -67,7 +67,7 @@ for column in catagorical:
     print(train_df[column].value_counts(normalize=True))  # Shows % directly
     print("-" * 100)
 
-"""'
+
 # distribution of catagorical variables
 for column in catagorical:
     plt.figure(figsize=(8, 10))
@@ -81,7 +81,7 @@ for column in numeric:
     sns.histplot(train_df[column], kde=True, bins=30, color="blue")
     plt.title(f"Distribution of {column}")
     plt.show()
-"""
+
 
 # encoding categorical variables
 # (here, I'm facing an error, 'label_Status' , it is because traiin data have this column but test data doesn't)
