@@ -62,11 +62,6 @@ catagorical = train_df.select_dtypes("object").columns.tolist()
 print(catagorical)
 
 
-# checking the distribution of the target variable
-for column in catagorical:
-    print(train_df[column].value_counts(normalize=True))  # Shows % directly
-    print("-" * 100)
-
 
 # distribution of catagorical variables
 for column in catagorical:
@@ -121,7 +116,7 @@ x_train, x_test, y_train, y_test = train_test_split(
 )
 
 
-# model training with logistic regression
+# scaling the data
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(x_train)
 X_test_scaled = scaler.transform(x_test)
